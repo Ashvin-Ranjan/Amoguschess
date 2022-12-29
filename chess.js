@@ -16,9 +16,11 @@ style.innerHTML = `
 `;
 document.getElementsByTagName('head')[0].appendChild(style);
 
-function replaceAnalysisText() {
-  nodeAnalysis = document.getElementsByClassName("sidebar-view-grayscale");
-  nodeAnalysis.innerHTML = "Analysus";
+var replaceAnalysisText = () => {
+  allSpans = document.querySelectorAll("span");
+    [].forEach.call(allSpans, (a) => {
+        if (a.innerText == "Analysis") { a.innerText = "Analysus" }
+    })
 }
 
 window.onload = replaceAnalysisText;
