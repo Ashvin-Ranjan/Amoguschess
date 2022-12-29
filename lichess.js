@@ -17,10 +17,10 @@ style.innerHTML = `
 document.getElementsByTagName('head')[0].appendChild(style);
 
 var replaceAnalysisText = () => {
-  allSpans = document.querySelectorAll("span");
-    [].forEach.call(allSpans, (a) => {
-        if (a.innerText == "Analysis") { a.innerText = "Analysus" }
-    })
+  allAs = document.querySelectorAll("a");
+	[].forEach.call(allAs, (a) => {
+		if (a.innerHTML == "Analysis board") { a.innerText = "Analysus board" };
+	})
 }
 
 window.onload = replaceAnalysisText;
