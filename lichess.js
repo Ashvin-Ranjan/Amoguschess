@@ -16,11 +16,7 @@ style.innerHTML = `
 `;
 document.getElementsByTagName('head')[0].appendChild(style);
 
-var replaceAnalysisText = () => {
-  allAs = document.querySelectorAll("a");
-	[].forEach.call(allAs, (a) => {
-		if (a.innerHTML == "Analysis board") { a.innerText = "Analysus board" };
-	})
-}
-
-window.onload = replaceAnalysisText;
+allAs = document.querySelectorAll("a");
+[].forEach.call(allAs, (a) => {
+if (a.innerHTML == "Analysis board") { a.innerText = "Analysus board" };
+});

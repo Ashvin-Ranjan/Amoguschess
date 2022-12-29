@@ -16,11 +16,11 @@ style.innerHTML = `
 `;
 document.getElementsByTagName('head')[0].appendChild(style);
 
-var replaceAnalysisText = () => {
+var replaceAnalysisText = (mutations) => {
   allSpans = document.querySelectorAll("span");
-    [].forEach.call(allSpans, (a) => {
-        if (a.innerText == "Analysis") { a.innerText = "Analysus" }
-    })
+  [].forEach.call(allSpans, (a) => {
+      if (a.innerText == "Analysis") { a.innerText = "Analysus" }
+  })
 }
 
-window.onload = replaceAnalysisText;
+setInterval(replaceAnalysisText, 1000);
