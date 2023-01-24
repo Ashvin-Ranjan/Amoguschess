@@ -1,20 +1,20 @@
 {
-    "name": "Amoguschess",
-    "version": "1.0.1",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["https://lichess.org/*"],
-            "js": ["lichess.js"]
-        },
-        {
-            "matches": ["https://www.chess.com/*"],
-            "js": ["chess.js"]
-        }
-    ],
-    "icons": { 
-        "16": "icon16.png",
-        "48": "icon48.png",
-       "128": "icon128.png"
+  "name": "Amoguschess",
+  "version": "1.0.2",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/*"],
+      "js": ["lichess.js"]
+    },
+    {
+      "matches": ["https://www.chess.com/*"],
+      "js": ["chess.js"]
     }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }
